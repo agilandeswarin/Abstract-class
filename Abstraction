@@ -1,1 +1,62 @@
+Abstraction:All child class to implement the abstract the parent class.It does not have Object.
+
+package Practices;
+
+abstract class Animalstype
+{
+	abstract void sound();
+	
+	abstract void breed();
+	
+}
+
+
+class dog extends Animalstype
+{
+	void sound()
+	{
+		System.out.println("Barking");
+	}
+	void breed()
+	{
+		System.out.println("Retriver");
+	}
+}
+
+class cat extends Animalstype
+{
+	void sound()
+	{
+		System.out.println("Meow");
+	}
+	void breed()
+	{
+		System.out.println("Persian");
+	}
+}
+
+
+
+
+
+public class Abstractsimple {
+
+	public static void main(String[] args) {
+		dog d1=new dog() {                           // ANAONYMOUS CLASS -if we kept semicolon ";",the object will call forward class
+			                     
+        	public void sound()                      // if we use braces"{}"
+        	{
+        		System.out.println("New sound of barking");  // It will call here
+        	}
+        };
+		d1.sound();
+		d1.breed();
+		
+		cat c1=new cat();
+		c1.sound();
+		c1.breed();
+       
+	}
+
+}
 
