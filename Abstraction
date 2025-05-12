@@ -1,5 +1,6 @@
 Abstraction:All child class to implement the abstract the parent class.It does not have Object.
 
+PROGRAM:
 package Practices;
 
 abstract class Animalstype
